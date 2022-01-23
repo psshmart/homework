@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		523B41C9279CBCEC000EC7D8 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B41C8279CBCEC000EC7D8 /* MessagesViewController.swift */; };
+		523B41CD279D9D4C000EC7D8 /* PinnedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B41CC279D9D4C000EC7D8 /* PinnedTableViewCell.swift */; };
+		523B41D1279DA03D000EC7D8 /* PinnedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B41D0279DA03D000EC7D8 /* PinnedCollectionViewCell.swift */; };
+		523B41D4279DBFEA000EC7D8 /* ChatsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B41D3279DBFEA000EC7D8 /* ChatsModel.swift */; };
+		523B41D6279DC4E4000EC7D8 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B41D5279DC4E4000EC7D8 /* ChatTableViewCell.swift */; };
 		52BFAC6C275F694900BADABF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFAC6B275F694900BADABF /* ProfileViewController.swift */; };
 		52BFAC6F275F697500BADABF /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFAC6E275F697500BADABF /* CustomFonts.swift */; };
 		52BFAC71275F6A6900BADABF /* Habibi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52BFAC70275F6A6900BADABF /* Habibi-Regular.ttf */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		523B41C8279CBCEC000EC7D8 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		523B41CC279D9D4C000EC7D8 /* PinnedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedTableViewCell.swift; sourceTree = "<group>"; };
+		523B41D0279DA03D000EC7D8 /* PinnedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedCollectionViewCell.swift; sourceTree = "<group>"; };
+		523B41D3279DBFEA000EC7D8 /* ChatsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsModel.swift; sourceTree = "<group>"; };
+		523B41D5279DC4E4000EC7D8 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		52BFAC6B275F694900BADABF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		52BFAC6E275F697500BADABF /* CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
 		52BFAC70275F6A6900BADABF /* Habibi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Habibi-Regular.ttf"; path = "../../../../../../Downloads/Habibi/Habibi-Regular.ttf"; sourceTree = "<group>"; };
@@ -39,10 +49,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		523B41CA279D9CED000EC7D8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				523B41CB279D9D1C000EC7D8 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		523B41CB279D9D1C000EC7D8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				523B41CC279D9D4C000EC7D8 /* PinnedTableViewCell.swift */,
+				523B41D0279DA03D000EC7D8 /* PinnedCollectionViewCell.swift */,
+				523B41D5279DC4E4000EC7D8 /* ChatTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		523B41D2279DBF8C000EC7D8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				523B41D3279DBFEA000EC7D8 /* ChatsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		52BFAC6A275F68E500BADABF /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				52BFAC6B275F694900BADABF /* ProfileViewController.swift */,
+				523B41C8279CBCEC000EC7D8 /* MessagesViewController.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -75,6 +112,8 @@
 		9AD4D4CD270A427C005F0BE9 /* homework_2 */ = {
 			isa = PBXGroup;
 			children = (
+				523B41D2279DBF8C000EC7D8 /* Models */,
+				523B41CA279D9CED000EC7D8 /* Views */,
 				52BFAC6D275F695300BADABF /* Helpers */,
 				52BFAC6A275F68E500BADABF /* Modules */,
 				9AD4D4CE270A427C005F0BE9 /* AppDelegate.swift */,
@@ -156,10 +195,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				523B41C9279CBCEC000EC7D8 /* MessagesViewController.swift in Sources */,
 				52BFAC6C275F694900BADABF /* ProfileViewController.swift in Sources */,
 				52BFAC6F275F697500BADABF /* CustomFonts.swift in Sources */,
+				523B41D6279DC4E4000EC7D8 /* ChatTableViewCell.swift in Sources */,
+				523B41CD279D9D4C000EC7D8 /* PinnedTableViewCell.swift in Sources */,
 				9AD4D4CF270A427C005F0BE9 /* AppDelegate.swift in Sources */,
+				523B41D1279DA03D000EC7D8 /* PinnedCollectionViewCell.swift in Sources */,
 				9AD4D4D1270A427C005F0BE9 /* SceneDelegate.swift in Sources */,
+				523B41D4279DBFEA000EC7D8 /* ChatsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
