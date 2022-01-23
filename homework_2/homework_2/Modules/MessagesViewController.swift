@@ -9,10 +9,30 @@ import UIKit
 
 class MessagesViewController: UITableViewController {
     
+    // MARK: - Constants
+    
+    enum Constants {
+        enum Text {
+            static let backIcon = "backIcon"
+            static let placeholder = "Who do you want to chat with?"
+            static let navigationTitle = "MESSAGES"
+        }
+        
+        enum Identifiers {
+            static let pinned = "PinnedTableViewCell"
+            static let chats = "ChatTableViewCell"
+        }
+        
+        enum Numbers {
+            static let fontSize: CGFloat = 17
+            static let one: Int = 1
+        }
+    }
+    
     // MARK: - Instance Properties
     
     private var backImage: UIImage = {
-        var image = UIImage(named: "backIcon")?.withRenderingMode(.alwaysOriginal)
+        var image = UIImage(named: Constants.Text.backIcon)?.withRenderingMode(.alwaysOriginal)
         
         return image ?? UIImage()
     }()
@@ -84,17 +104,17 @@ class MessagesViewController: UITableViewController {
     }
     
     private func setupSearchBar() {
-        searchController.searchBar.searchTextField.attributedPlaceholder = NSAttributedString(string: "Who do you want to chat with?", attributes: [NSAttributedString.Key.font: UIFont.habibiFont(style: .regular, size: 17)])
+        searchController.searchBar.searchTextField.attributedPlaceholder = NSAttributedString(string: Constants.Text.placeholder, attributes: [NSAttributedString.Key.font: UIFont.habibiFont(style: .regular, size: Constants.Numbers.fontSize)])
     }
     
     private func setupNavigationBar() {
         navigationItem.searchController = searchController
         navigationController?.navigationBar.prefersLargeTitles = false
-        navigationItem.title = "MESSAGES"
+        navigationItem.title = Constants.Text.navigationTitle
 
         let navBarAppearance = UINavigationBarAppearance()
         navBarAppearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
-        navBarAppearance.titleTextAttributes = [NSAttributedString.Key.font: UIFont.habibiFont(style: .regular, size: 17)]
+        navBarAppearance.titleTextAttributes = [NSAttributedString.Key.font: UIFont.habibiFont(style: .regular, size: Constants.Numbers.fontSize)]
         navBarAppearance.backgroundColor = .systemGray6
         navBarAppearance.setBackIndicatorImage(backImage, transitionMaskImage: backImage)
         navigationController?.navigationBar.isTranslucent = false
@@ -105,10 +125,13 @@ class MessagesViewController: UITableViewController {
     }
     
     private func setupTableView() {
-        tableView.register(PinnedTableViewCell.self, forCellReuseIdentifier: "PinnedTableViewCell")
-        tableView.register(ChatTableViewCell.self, forCellReuseIdentifier: "ChatTableViewCell")
+        tableView.register(PinnedTableViewCell.self, forCellReuseIdentifier: Constants.Identifiers.pinned)
+        tableView.register(ChatTableViewCell.self, forCellReuseIdentifier: Constants.Identifiers.chats)
         tableView.separatorStyle = .singleLine
-        tableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        tableView.separatorInset = UIEdgeInsets(top: .zero,
+                                                left: .zero,
+                                                bottom: .zero,
+                                                right: .zero)
         tableView.tableFooterView = UIView()
     }
     
@@ -117,26 +140,31 @@ class MessagesViewController: UITableViewController {
     }
 }
 
+// MARK: - UITableView
+
 extension MessagesViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row == 0 {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "PinnedTableViewCell", for: indexPath) as? PinnedTableViewCell else {
+        if indexPath.row == .zero {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: Constants.Identifiers.pinned, for: indexPath) as? PinnedTableViewCell else {
                 return UITableViewCell()
             }
             cell.configure(data: pinnedChatsData)
             return cell
         } else {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "ChatTableViewCell", for: indexPath) as? ChatTableViewCell else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: Constants.Identifiers.chats, for: indexPath) as? ChatTableViewCell else {
                 return UITableViewCell()
             }
-            let model = chatsData[indexPath.row - 1]
-            cell.configure(image: model.image ?? UIImage(), name: model.name ?? "", message: model.lastMessage ?? "", date: model.timePassed ?? "")
+            let model = chatsData[indexPath.row - Constants.Numbers.one]
+            cell.configure(image: model.image ?? UIImage(),
+                           name: model.name ?? "",
+                           message: model.lastMessage ?? "",
+                           date: model.timePassed ?? "")
             return cell
         }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return chatsData.count + 1
+        return chatsData.count + Constants.Numbers.one
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
