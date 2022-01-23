@@ -14,8 +14,8 @@ class ProfileViewController: UIViewController {
     private lazy var messagesBarButtonItem: UIBarButtonItem = {
         let button = UIBarButtonItem(title: "Messages",
                                      style: .plain,
-                                     target: nil,
-                                     action: nil)
+                                     target: self,
+                                     action: #selector(navigateToMessages))
         button.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.habibiFont(style: .regular, size: 17)], for: .normal)
         button.tintColor = .black
         return button
@@ -56,6 +56,12 @@ class ProfileViewController: UIViewController {
         makeConstraints()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        setupNavigationBar()
+    }
+    
     private func setupNavigationBar() {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "Alex Tsimikas"
@@ -66,6 +72,7 @@ class ProfileViewController: UIViewController {
         navBarAppearance.largeTitleTextAttributes = [NSAttributedString.Key.font: UIFont.habibiFont(style: .regular, size: 34)]
         navBarAppearance.backgroundColor = .systemGray6
         navigationController?.navigationBar.isTranslucent = false
+        navigationItem.backButtonTitle = ""
                 
         navigationController?.navigationBar.standardAppearance = navBarAppearance
         navigationController?.navigationBar.scrollEdgeAppearance = navBarAppearance
@@ -90,5 +97,12 @@ class ProfileViewController: UIViewController {
         let imageLeadingConstraint = imageView.leadingAnchor.constraint(equalTo: logoutButton.leadingAnchor, constant: 34)
         let imageCenterConstraint = imageView.centerYAnchor.constraint(equalTo: logoutButton.centerYAnchor)
         NSLayoutConstraint.activate([labelTopConstraint, labelLeadingConstraint, buttonTopConstraint, buttonCenterConstraint, buttonWidthConstraint, buttonHeightConstraint, imageCenterConstraint, imageLeadingConstraint])
+    }
+    
+    // MARK: - Actions
+    
+    @objc private func navigateToMessages() {
+        let viewController = MessagesViewController()
+        navigationController?.pushViewController(viewController, animated: false)
     }
 }
