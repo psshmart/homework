@@ -49,44 +49,78 @@ class MessagesViewController: UITableViewController {
             image: UIImage(named: "Kim")?.withRenderingMode(.alwaysOriginal) ?? UIImage(),
             name: "Kim",
             lastMessage: "",
-            timePassed: ""),
+            timePassed: "",
+            dates: []),
         ChatsModel(
             image: UIImage(named: "Steve")?.withRenderingMode(.alwaysOriginal) ?? UIImage(),
             name: "Steve",
             lastMessage: "",
-            timePassed: ""),
+            timePassed: "",
+            dates: []),
         ChatsModel(
             image: UIImage(named: "Mia")?.withRenderingMode(.alwaysOriginal) ?? UIImage(),
             name: "Mia",
             lastMessage: "",
-            timePassed: "")]
+            timePassed: "",
+            dates: [])]
     
     private var chatsData: [ChatsModel] = [
         ChatsModel(
             image: UIImage(named: "Jessica")?.withRenderingMode(.alwaysOriginal) ?? UIImage(),
             name: "Jessica Thompson",
             lastMessage: "Hey you! Are u there?",
-            timePassed: "4h ago"),
+            timePassed: "4h ago",
+            dates: [DatesMessages(date: "Sep 14, 2021",
+                                  messages: [
+                                    Message(isFrom: false,
+                                            messageTest: "Alex, let’s meet this weekend. I’ll check with Dave too 😎",
+                                            time: "8:27 PM"),
+                                    Message(isFrom: true,
+                                            messageTest: "Sure. Let’s aim for saturday",
+                                            time: "8:56 PM"),
+                                    Message(isFrom: true,
+                                            messageTest: "I’m visiting mom this sunday 👻",
+                                            time: "8:56 PM"),
+                                    Message(isFrom: false,
+                                            messageTest: "Alrighty! Will give you a call shortly 🤗",
+                                            time: "9:01 PM"),
+                                    Message(isFrom: true,
+                                            messageTest: "❤️",
+                                            time: "9:04 PM")]),
+                    DatesMessages(date: "TODAY",
+                                  messages: [
+                                    Message(isFrom: false,
+                                            messageTest: "Hey you! Are you there?",
+                                            time: "11:53 AM"),
+                                    Message(isFrom: true,
+                                            messageTest: "👋 Hi Jess! What’s up?",
+                                            time: "12:14 PM")])
+            ]
+        ),
         ChatsModel(
             image: UIImage(named: "Kat")?.withRenderingMode(.alwaysOriginal) ?? UIImage(),
             name: "Kat Williams",
             lastMessage: "OMG! OMG! OMG!",
-            timePassed: "5h ago"),
+            timePassed: "5h ago",
+            dates: []),
         ChatsModel(
             image: UIImage(named: "Jacob")?.withRenderingMode(.alwaysOriginal) ?? UIImage(),
             name: "Jacob Washington",
             lastMessage: "Sure. Sunday works for me!",
-            timePassed: "20/9/21"),
+            timePassed: "20/9/21",
+            dates: []),
         ChatsModel(
             image: UIImage(named: "Leslie")?.withRenderingMode(.alwaysOriginal) ?? UIImage(),
             name: "Leslie Alexander",
             lastMessage: "Sent you an invite for next monday.",
-            timePassed: "19/9/21"),
+            timePassed: "19/9/21",
+            dates: []),
         ChatsModel(
             image: UIImage(named: "Tony")?.withRenderingMode(.alwaysOriginal) ?? UIImage(),
             name: "Tony Monta",
             lastMessage: "How’s Alicia doing? Ask her to give m...",
-            timePassed: "19/9/21"),
+            timePassed: "19/9/21",
+            dates: []),
     ]
     
     // MARK: - Instance Methods
@@ -118,6 +152,7 @@ class MessagesViewController: UITableViewController {
         navBarAppearance.backgroundColor = .systemGray6
         navBarAppearance.setBackIndicatorImage(backImage, transitionMaskImage: backImage)
         navigationController?.navigationBar.isTranslucent = false
+        navigationItem.backButtonTitle = ""
                 
         navigationController?.navigationBar.standardAppearance = navBarAppearance
         navigationController?.navigationBar.scrollEdgeAppearance = navBarAppearance
@@ -169,5 +204,15 @@ extension MessagesViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let controller = ChatController()
+        controller.config(data: chatsData[indexPath.row - 1].dates ?? [],
+                          image: chatsData[indexPath.row - 1].image ?? UIImage(),
+                          name: chatsData[indexPath.row - 1].name ?? "")
+        navigationController?.pushViewController(controller, animated: true)
+        
+        tableView.deselectRow(at: indexPath, animated: false)
     }
 }
