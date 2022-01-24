@@ -3,24 +3,52 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		114C8CD48EBEDB3B52428300 /* Pods_homework_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7822BABF5FD924F02EFA3127 /* Pods_homework_2.framework */; };
+		523B41C9279CBCEC000EC7D8 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B41C8279CBCEC000EC7D8 /* MessagesViewController.swift */; };
+		523B41CD279D9D4C000EC7D8 /* PinnedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B41CC279D9D4C000EC7D8 /* PinnedTableViewCell.swift */; };
+		523B41D1279DA03D000EC7D8 /* PinnedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B41D0279DA03D000EC7D8 /* PinnedCollectionViewCell.swift */; };
+		523B41D4279DBFEA000EC7D8 /* ChatsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B41D3279DBFEA000EC7D8 /* ChatsModel.swift */; };
+		523B41D6279DC4E4000EC7D8 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B41D5279DC4E4000EC7D8 /* ChatTableViewCell.swift */; };
+		523B41D8279E0963000EC7D8 /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B41D7279E0963000EC7D8 /* ChatController.swift */; };
+		523B41DA279E0EA1000EC7D8 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B41D9279E0EA1000EC7D8 /* ChatView.swift */; };
+		523B41DD279E10E4000EC7D8 /* MyMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B41DC279E10E4000EC7D8 /* MyMessageCell.swift */; };
+		523B41DF279E9571000EC7D8 /* ToMeMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B41DE279E9571000EC7D8 /* ToMeMessageCell.swift */; };
+		523B41E1279EA3E4000EC7D8 /* WriteMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B41E0279EA3E4000EC7D8 /* WriteMessageView.swift */; };
+		523B41E3279EAA1A000EC7D8 /* MessageTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B41E2279EAA1A000EC7D8 /* MessageTextField.swift */; };
+		52BFAC6C275F694900BADABF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFAC6B275F694900BADABF /* ProfileViewController.swift */; };
+		52BFAC6F275F697500BADABF /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFAC6E275F697500BADABF /* CustomFonts.swift */; };
+		52BFAC71275F6A6900BADABF /* Habibi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52BFAC70275F6A6900BADABF /* Habibi-Regular.ttf */; };
 		9AD4D4CF270A427C005F0BE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4D4CE270A427C005F0BE9 /* AppDelegate.swift */; };
 		9AD4D4D1270A427C005F0BE9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4D4D0270A427C005F0BE9 /* SceneDelegate.swift */; };
-		9AD4D4D3270A427C005F0BE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD4D4D2270A427C005F0BE9 /* ViewController.swift */; };
-		9AD4D4D6270A427C005F0BE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD4D4D4270A427C005F0BE9 /* Main.storyboard */; };
 		9AD4D4D8270A4280005F0BE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AD4D4D7270A4280005F0BE9 /* Assets.xcassets */; };
 		9AD4D4DB270A4280005F0BE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD4D4D9270A4280005F0BE9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32E6449AA970110A379D4C2D /* Pods-homework_2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-homework_2.debug.xcconfig"; path = "Target Support Files/Pods-homework_2/Pods-homework_2.debug.xcconfig"; sourceTree = "<group>"; };
+		523B41C8279CBCEC000EC7D8 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		523B41CC279D9D4C000EC7D8 /* PinnedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedTableViewCell.swift; sourceTree = "<group>"; };
+		523B41D0279DA03D000EC7D8 /* PinnedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedCollectionViewCell.swift; sourceTree = "<group>"; };
+		523B41D3279DBFEA000EC7D8 /* ChatsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsModel.swift; sourceTree = "<group>"; };
+		523B41D5279DC4E4000EC7D8 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		523B41D7279E0963000EC7D8 /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		523B41D9279E0EA1000EC7D8 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		523B41DC279E10E4000EC7D8 /* MyMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMessageCell.swift; sourceTree = "<group>"; };
+		523B41DE279E9571000EC7D8 /* ToMeMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToMeMessageCell.swift; sourceTree = "<group>"; };
+		523B41E0279EA3E4000EC7D8 /* WriteMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteMessageView.swift; sourceTree = "<group>"; };
+		523B41E2279EAA1A000EC7D8 /* MessageTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTextField.swift; sourceTree = "<group>"; };
+		52BFAC6B275F694900BADABF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		52BFAC6E275F697500BADABF /* CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
+		52BFAC70275F6A6900BADABF /* Habibi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Habibi-Regular.ttf"; path = "../../../../../../Downloads/Habibi/Habibi-Regular.ttf"; sourceTree = "<group>"; };
+		7822BABF5FD924F02EFA3127 /* Pods_homework_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_homework_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		924AA52BDC7060A64FFFD7C5 /* Pods-homework_2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-homework_2.release.xcconfig"; path = "Target Support Files/Pods-homework_2/Pods-homework_2.release.xcconfig"; sourceTree = "<group>"; };
 		9AD4D4CB270A427C005F0BE9 /* homework_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = homework_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD4D4CE270A427C005F0BE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AD4D4D0270A427C005F0BE9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9AD4D4D2270A427C005F0BE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9AD4D4D5270A427C005F0BE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9AD4D4D7270A4280005F0BE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AD4D4DA270A4280005F0BE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AD4D4DC270A4280005F0BE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,17 +59,95 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				114C8CD48EBEDB3B52428300 /* Pods_homework_2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18890239EF23FF32D56CE689 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32E6449AA970110A379D4C2D /* Pods-homework_2.debug.xcconfig */,
+				924AA52BDC7060A64FFFD7C5 /* Pods-homework_2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		523B41CA279D9CED000EC7D8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				523B41DB279E0EA5000EC7D8 /* View */,
+				523B41CB279D9D1C000EC7D8 /* Cells */,
+				523B41E2279EAA1A000EC7D8 /* MessageTextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		523B41CB279D9D1C000EC7D8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				523B41CC279D9D4C000EC7D8 /* PinnedTableViewCell.swift */,
+				523B41D0279DA03D000EC7D8 /* PinnedCollectionViewCell.swift */,
+				523B41D5279DC4E4000EC7D8 /* ChatTableViewCell.swift */,
+				523B41DC279E10E4000EC7D8 /* MyMessageCell.swift */,
+				523B41DE279E9571000EC7D8 /* ToMeMessageCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		523B41D2279DBF8C000EC7D8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				523B41D3279DBFEA000EC7D8 /* ChatsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		523B41DB279E0EA5000EC7D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				523B41D9279E0EA1000EC7D8 /* ChatView.swift */,
+				523B41E0279EA3E4000EC7D8 /* WriteMessageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52BFAC6A275F68E500BADABF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				52BFAC6B275F694900BADABF /* ProfileViewController.swift */,
+				523B41C8279CBCEC000EC7D8 /* MessagesViewController.swift */,
+				523B41D7279E0963000EC7D8 /* ChatController.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		52BFAC6D275F695300BADABF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				52BFAC70275F6A6900BADABF /* Habibi-Regular.ttf */,
+				52BFAC6E275F697500BADABF /* CustomFonts.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		91568DE80B349CB0EA6F0116 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7822BABF5FD924F02EFA3127 /* Pods_homework_2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9AD4D4C2270A427C005F0BE9 = {
 			isa = PBXGroup;
 			children = (
 				9AD4D4CD270A427C005F0BE9 /* homework_2 */,
 				9AD4D4CC270A427C005F0BE9 /* Products */,
+				18890239EF23FF32D56CE689 /* Pods */,
+				91568DE80B349CB0EA6F0116 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +162,12 @@
 		9AD4D4CD270A427C005F0BE9 /* homework_2 */ = {
 			isa = PBXGroup;
 			children = (
+				523B41D2279DBF8C000EC7D8 /* Models */,
+				523B41CA279D9CED000EC7D8 /* Views */,
+				52BFAC6D275F695300BADABF /* Helpers */,
+				52BFAC6A275F68E500BADABF /* Modules */,
 				9AD4D4CE270A427C005F0BE9 /* AppDelegate.swift */,
 				9AD4D4D0270A427C005F0BE9 /* SceneDelegate.swift */,
-				9AD4D4D2270A427C005F0BE9 /* ViewController.swift */,
-				9AD4D4D4270A427C005F0BE9 /* Main.storyboard */,
 				9AD4D4D7270A4280005F0BE9 /* Assets.xcassets */,
 				9AD4D4D9270A4280005F0BE9 /* LaunchScreen.storyboard */,
 				9AD4D4DC270A4280005F0BE9 /* Info.plist */,
@@ -74,9 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AD4D4DF270A4280005F0BE9 /* Build configuration list for PBXNativeTarget "homework_2" */;
 			buildPhases = (
+				DEB685E9D9B7187B261F624B /* [CP] Check Pods Manifest.lock */,
 				9AD4D4C7270A427C005F0BE9 /* Sources */,
 				9AD4D4C8270A427C005F0BE9 /* Frameworks */,
 				9AD4D4C9270A427C005F0BE9 /* Resources */,
+				07AA4B257FA8A834DFC76BE5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,34 +236,80 @@
 			files = (
 				9AD4D4DB270A4280005F0BE9 /* LaunchScreen.storyboard in Resources */,
 				9AD4D4D8270A4280005F0BE9 /* Assets.xcassets in Resources */,
-				9AD4D4D6270A427C005F0BE9 /* Main.storyboard in Resources */,
+				52BFAC71275F6A6900BADABF /* Habibi-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07AA4B257FA8A834DFC76BE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-homework_2/Pods-homework_2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-homework_2/Pods-homework_2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-homework_2/Pods-homework_2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEB685E9D9B7187B261F624B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-homework_2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9AD4D4C7270A427C005F0BE9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AD4D4D3270A427C005F0BE9 /* ViewController.swift in Sources */,
+				523B41C9279CBCEC000EC7D8 /* MessagesViewController.swift in Sources */,
+				52BFAC6C275F694900BADABF /* ProfileViewController.swift in Sources */,
+				523B41E1279EA3E4000EC7D8 /* WriteMessageView.swift in Sources */,
+				52BFAC6F275F697500BADABF /* CustomFonts.swift in Sources */,
+				523B41D8279E0963000EC7D8 /* ChatController.swift in Sources */,
+				523B41DA279E0EA1000EC7D8 /* ChatView.swift in Sources */,
+				523B41DD279E10E4000EC7D8 /* MyMessageCell.swift in Sources */,
+				523B41D6279DC4E4000EC7D8 /* ChatTableViewCell.swift in Sources */,
+				523B41DF279E9571000EC7D8 /* ToMeMessageCell.swift in Sources */,
+				523B41CD279D9D4C000EC7D8 /* PinnedTableViewCell.swift in Sources */,
 				9AD4D4CF270A427C005F0BE9 /* AppDelegate.swift in Sources */,
+				523B41D1279DA03D000EC7D8 /* PinnedCollectionViewCell.swift in Sources */,
+				523B41E3279EAA1A000EC7D8 /* MessageTextField.swift in Sources */,
 				9AD4D4D1270A427C005F0BE9 /* SceneDelegate.swift in Sources */,
+				523B41D4279DBFEA000EC7D8 /* ChatsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9AD4D4D4270A427C005F0BE9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9AD4D4D5270A427C005F0BE9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9AD4D4D9270A4280005F0BE9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,12 +439,14 @@
 		};
 		9AD4D4E0270A4280005F0BE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32E6449AA970110A379D4C2D /* Pods-homework_2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3APP3C87XX;
 				INFOPLIST_FILE = homework_2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,18 +454,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "safonova.homework-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		9AD4D4E1270A4280005F0BE9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 924AA52BDC7060A64FFFD7C5 /* Pods-homework_2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3APP3C87XX;
 				INFOPLIST_FILE = homework_2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +475,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "safonova.homework-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
